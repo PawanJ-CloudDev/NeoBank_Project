@@ -20,21 +20,21 @@ NeoBank_Project/
 │   ├── metadata/              Metadata framework notebooks
 │   │   ├── 01_setup_metadata       Create metadata tables and load config
 │   │   └── 02_check_metadata       Validate metadata tables
-│   ├── bronze/                Bronze ingestion notebooks
+│   ├── bronze/                
 │   │   ├── 01_Read_Tables_List     Read active tables from metadata (widget-driven)
 │   │   ├── 02_read_table_parameters Read load_type, primary_key, watermark_column
 │   │   └── 03_source_to_bronze     Ingest source data into Bronze Delta tables
-│   ├── silver/                Silver transformation notebooks
+│   ├── silver/                
 │   │   └── 04_bronze_to_silver     Cleanse, dedupe, enrich, SCD handling
-│   ├── gold/                  Gold transformation notebooks
-│   │   ├── 01_Silver_to_Gold_Driver Driver notebook for Gold layer
-│   │   ├── customer_360            360-degree customer view
-│   │   ├── branch_performance       Branch-level performance metrics
+│   ├── gold/                      Gold transformation 
+│   │   ├── 01_Silver_to_Gold_Driver     Driver notebook for Gold layer
+│   │   ├── customer_360                 360-degree customer view
+│   │   ├── branch_performance           Branch-level performance metrics
 │   │   ├── transaction_channel_summary  Transactions by channel
-│   │   ├── daily_bank_kpi          Daily bank-wide KPIs
-│   │   └── risk_customer_summary    Customer risk profiles
-│   ├── orchestration/         Job orchestration notebooks (placeholder)
-│   └── utils/                 Shared utility notebooks
+│   │   ├── daily_bank_kpi            Daily bank-wide KPIs
+│   │   └── risk_customer_summary      Customer risk profiles
+│   ├── orchestration/
+│   └── utils/                 
 │       ├── 00_Setup_Secret_Scope   Databricks secret scope setup
 │       └── 01_Send_Email           Email notification on success/failure
 ├── config/                    Connection configs, job parameters
@@ -113,6 +113,6 @@ The pipeline is fully metadata-driven — no hardcoded table names or load logic
 * **Secret Scope**: banking-scope (key: postgres-connection-json)
 * **Cloud Provider**: AWS
 
-## License
 
-Internal project — NeoBank Data Engineering Team
+
+NeoBank Project By Pawan Jaiswal
