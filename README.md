@@ -18,7 +18,7 @@ Data Sources -> Ingestion -> Bronze -> Silver -> Gold -> Consumption
 NeoBank_Project/
 ├── notebooks/
 │   ├── metadata/              Metadata framework notebooks
-│   │   ├── 01_setup_metadata       Create metadata tables and load config
+│   │   ├── 01_setup_metadata       
 │   │   └── 02_check_metadata       Validate metadata tables
 │   ├── bronze/                
 │   │   ├── 01_Read_Tables_List     Read active tables from metadata (widget-driven)
@@ -27,20 +27,20 @@ NeoBank_Project/
 │   ├── silver/                
 │   │   └── 04_bronze_to_silver     Cleanse, dedupe, enrich, SCD handling
 │   ├── gold/                      Gold transformation 
-│   │   ├── 01_Silver_to_Gold_Driver     Driver notebook for Gold layer
-│   │   ├── customer_360                 360-degree customer view
-│   │   ├── branch_performance           Branch-level performance metrics
-│   │   ├── transaction_channel_summary  Transactions by channel
-│   │   ├── daily_bank_kpi            Daily bank-wide KPIs
-│   │   └── risk_customer_summary      Customer risk profiles
+│   │   ├── 01_Silver_to_Gold_Driver    
+│   │   ├── customer_360                 
+│   │   ├── branch_performance          
+│   │   ├── transaction_channel_summary  
+│   │   ├── daily_bank_kpi            
+│   │   └── risk_customer_summary     
 │   ├── orchestration/
 │   └── utils/                 
-│       ├── 00_Setup_Secret_Scope   Databricks secret scope setup
-│       └── 01_Send_Email           Email notification on success/failure
-├── config/                    Connection configs, job parameters
+│       ├── 00_Setup_Secret_Scope   
+│       └── 01_Send_Email          
+├── config/                    
 ├── sql/                       DDL, DQ rules, dashboard queries
 ├── docs/                      Documentation
-│   └── NeoBank_Architecture_Diagram  Architecture diagrams (Mermaid)
+│   └── NeoBank_Architecture_Diagram  
 └── tests/                     Pipeline test notebooks
 ```
 
